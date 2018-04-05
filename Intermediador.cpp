@@ -15,6 +15,8 @@ Intermediador::~Intermediador()
 
 void Intermediador::recorrer(vector<NoTerminal *> noTerminales)
 {
+    cout << "\n\n\n";
+
     string str;
     ifstream file;
     if(!file.is_open())
@@ -30,7 +32,7 @@ void Intermediador::recorrer(vector<NoTerminal *> noTerminales)
 
     cout << "\n\n\n\n";
 
-    for (int i = 0; i < noTerminales.size(); i++)
+    /*for (int i = 0; i < noTerminales.size(); i++)
     {
         NoTerminal noTerm = *noTerminales[i];
         cout << noTerm.caracter << "-> ";
@@ -39,7 +41,7 @@ void Intermediador::recorrer(vector<NoTerminal *> noTerminales)
             cout << noTerm.producciones[j] << "\n\t";
         }
         cout << endl;
-    }
+    }*/
 }
 
 
@@ -92,23 +94,6 @@ vector<NoTerminal *> Intermediador::noTerminales(vector<string> producciones)
         }
 
     }
-
-
-    for (int i = 0; i < no_teminales.size(); i++)
-    {
-        NoTerminal * noTerm = no_teminales[i];
-        cout << noTerm->caracter << "-> ";
-        vector<string> vect = noTerm->producciones;
-        cout << vect.size() << endl;
-        for (int j = 0; j < vect.size(); j++)
-        {
-            cout << vect[j] << "\tadios\n\t";
-        }
-        cout << endl;
-    }
-
-
-
     return no_teminales;
 }
 
