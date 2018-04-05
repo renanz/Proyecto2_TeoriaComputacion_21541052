@@ -1,0 +1,14 @@
+# depslib dependency file v1.0
+1522901446 source:c:\users\renan\desktop\teoriacompu\teoriacompu_21541052-proyecto2\main.cpp
+	<iostream>
+
+1522915044 source:c:\users\renan\desktop\teoriacompu\teoriacompu_21541052-proyecto2\intermediador.cpp
+	"Intermediador.h"
+
+1522912169 c:\users\renan\desktop\teoriacompu\teoriacompu_21541052-proyecto2\intermediador.h
+	<vector>
+	<string>
+	<iostream>
+	<fstream>
+	<string.h>
+
